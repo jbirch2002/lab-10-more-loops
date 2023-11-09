@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Which Floor</title>
+</head>
+<body>
+    <script>
+        var maximum_stories = 20;
+
+        var floor = parseInt(prompt("On what floor of the building is your office?"), 10);
+
+        while (floor > maximum_stories) 
+        {
+            console.log("You entered " + floor + ", but the building only has " + maximum_stories + " floors. Try again...");
+            floor = parseInt(prompt("That's not a valid floor. The building has " + maximum_stories + " floors. Try again..."), 10);
+        }
+
+        console.log("Congrats! you work on floor: " + floor);
+        alert("Congrats! you work on floor: " + floor);
+    </script>
+</body>
+</html>
