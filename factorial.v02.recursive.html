@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy New Year</title>
+<script>
+    function factorial(n)
+    {
+        // A recursive version of the factorial function.
+        if (n < 0) return; // termination
+        if (n === 0) return 1;
+        return n * factorial(n - 1);
+        // here using argument "n" also has an interator (like "i" in loops)
+    }
+
+    let usernum = parseInt(prompt("Number please: "));
+
+    console.log(usernum + "! is " + factorial(usernum));
+
+
+    // If the user enters 5
+    // Then the result: 5! = 5 x 4 x 3 x 2 x 1 = 120
+
+</script>
+</head>
+</html>
